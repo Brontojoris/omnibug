@@ -104,6 +104,7 @@ FBL.ns( function() { with( FBL ) {
             var os2 = _createElement.call( this, "span", { class: "qq" }, null, '"' );
             elems.push( os2 );
         } else {
+			if(val===null){val="";}
             elems.push( this.document.createTextNode( val ) );
         }
 
